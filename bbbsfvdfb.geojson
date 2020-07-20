@@ -130,9 +130,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
-        "marker-symbol": "star",
-        "marker-size": "large",
         "Name": "Big Brothers Big Sisters of the Fraser Valley Head Office",
         "Category": "Head Office"
       },
