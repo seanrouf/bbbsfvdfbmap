@@ -4,15 +4,12 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium",
-        "marker-symbol": "",
-        "name": "Boardwalk Cafe and Games",
-        "deal": "Little gets in free when big pays $5 cover. Tuesdays half off",
-        "region": "Ab",
-        "category": "Adventure",
         "Address": " 2546 Montrose Ave.",
-        "Phone": "604-850-0426"
+        "Phone": "604-850-0426",
+        "City": "Ab",
+        "Deal": "Little gets in free when big pays $5 cover. Tuesdays half off",
+        "Category": "Adventure",
+        "Name": "Boardwalk Cafe and Games"
       },
       "geometry": {
         "type": "Point",
@@ -25,15 +22,12 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium",
-        "marker-symbol": "",
         "Address": " 20104 Logan Ave",
-        "name": "Planet Lazer",
-        "deal": "2 games per player for only $9.25 + GST, Available in 3 locations",
-        "region": "La",
-        "category": "Adventure",
-        "Phone": "604-514- 2282"
+        "Phone": "604-514- 2282",
+        "City": "La",
+        "Deal": "2 games per player for only $9.25 + GST, Available in 3 locations",
+        "Category": "Adventure",
+        "Name": "Planet Lazer"
       },
       "geometry": {
         "type": "Point",
@@ -46,15 +40,12 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium",
-        "name": "VRCADE",
-        "marker-symbol": "",
-        "deal": "Use the coupon code YOUTHOFABBY when reserving online and receive a 25% discount off any day. ",
-        "region": "Ab",
-        "category": "Adventure",
         "Address": " 2-2712 Clearbrook Rd",
-        "Phone": "778-654-3388"
+        "Phone": "778-654-3388",
+        "City": "Ab",
+        "Deal": "Use the coupon code YOUTHOFABBY when reserving online and receive a 25% discount off any day. ",
+        "Category": "Adventure",
+        "Name": "VRCADE"
       },
       "geometry": {
         "type": "Point",
@@ -69,12 +60,10 @@
       "properties": {
         "Phone": "604-853-3477",
         "Address": "36036 South Parallel Rd",
-        "category": "Fitness",
-        "region": "Ab",
-        "deal": "Big and Little each pay Junior rate to pay 9 or 18 holes of golf. Free club rentals for Big and Little at driving range. Little receives 1 free drop of balls (approx. 18 balls) at the range when Big purchases.",
-        "name": "Fraserglen Golf Course",
-        "marker-size": "medium",
-        "marker-color": ""
+        "City": "Ab",
+        "Deal": "Big and Little each pay Junior rate to pay 9 or 18 holes of golf. Free club rentals for Big and Little at driving range. Little receives 1 free drop of balls (approx. 18 balls) at the range when Big purchases.",
+        "Category": "Fitness",
+        "Name": "Fraserglen Golf Course"
       },
       "geometry": {
         "type": "Point",
@@ -87,14 +76,12 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "",
-        "marker-size": "",
-        "name": "The Clay Cottage",
-        "deal": "Buy one piece and get the 2nd one for equal or lesser value at 1/2 price.",
-        "region": "Ab",
-        "category": "Crafts",
         "Address": "2536 Montrose Ave",
-        "Phone": "604-855-1138"
+        "Phone": "604-855-1138",
+        "City": "Ab",
+        "Deal": "Buy one piece and get the 2nd one for equal or lesser value at 1/2 price.",
+        "Category": "Crafts",
+        "Name": "The Clay Cottage"
       },
       "geometry": {
         "type": "Point",
@@ -107,13 +94,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Castle Fun Park",
-        "deal": "Buy one mini-golf, get one golf free for Bigs and Littles",
-        "region": "Ab",
-        "category": "Adventure",
         "Address": "36165 North Parallel Rd",
         "Phone": "604-850-0411",
-        "marker-color": ""
+        "City": "Ab",
+        "Deal": "Buy one mini-golf, get one golf free for Bigs and Littles",
+        "Category": "Adventure",
+        "Name": "Castle Fun Park"
       },
       "geometry": {
         "type": "Point",
@@ -126,18 +112,35 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Great West Fitness",
-        "deal": "Littles do not pay drop in fee when Big is a member (LB/LS must be at least 14 years old. Must workout together.",
-        "region": "Ab",
-        "category": "Fitness",
         "Address": "2550 Yale Ct, Abbotsford, BC V2S 8G9",
-        "Phone": ""
+        "Phone": "",
+        "City": "Ab",
+        "Deal": "Littles do not pay drop in fee when Big is a member (LB/LS must be at least 14 years old. Must workout together.",
+        "Category": "Fitness",
+        "Name": "Great West Fitness"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -122.26958155632018,
           49.04713358226541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-symbol": "star",
+        "marker-size": "large",
+        "Name": "Big Brothers Big Sisters of the Fraser Valley Head Office",
+        "Category": "Head Office"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.28693779557942,
+          49.04626247493557
         ]
       }
     }
