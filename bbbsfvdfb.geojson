@@ -1,1 +1,145 @@
-
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Boardwalk Cafe and Games",
+        "deal": "Little gets in free when big pays $5 cover. Tuesdays half off",
+        "region": "Ab",
+        "category": "Adventure",
+        "Address": " 2546 Montrose Ave.",
+        "Phone": "604-850-0426"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.29015812277792,
+          49.04813388649018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Address": " 20104 Logan Ave",
+        "name": "Planet Lazer",
+        "deal": "2 games per player for only $9.25 + GST, Available in 3 locations",
+        "region": "La",
+        "category": "Adventure",
+        "Phone": "604-514- 2282"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.66726966947317,
+          49.11121958870399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "name": "VRCADE",
+        "marker-symbol": "",
+        "deal": "Use the coupon code YOUTHOFABBY when reserving online and receive a 25% discount off any day. ",
+        "region": "Ab",
+        "category": "Adventure",
+        "Address": " 2-2712 Clearbrook Rd",
+        "Phone": "778-654-3388"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.33735561370848,
+          49.05139660187196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Phone": "604-853-3477",
+        "Address": "36036 South Parallel Rd",
+        "category": "Fitness",
+        "region": "Ab",
+        "deal": "Big and Little each pay Junior rate to pay 9 or 18 holes of golf. Free club rentals for Big and Little at driving range. Little receives 1 free drop of balls (approx. 18 balls) at the range when Big purchases.",
+        "name": "Fraserglen Golf Course",
+        "marker-size": "medium",
+        "marker-color": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.22955226898195,
+          49.03305686936007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "",
+        "marker-size": "",
+        "name": "The Clay Cottage",
+        "deal": "Buy one piece and get the 2nd one for equal or lesser value at 1/2 price.",
+        "region": "Ab",
+        "category": "Crafts",
+        "Address": "2536 Montrose Ave",
+        "Phone": "604-855-1138"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.29017153382301,
+          49.04797654647394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Castle Fun Park",
+        "deal": "Buy one mini-golf, get one golf free for Bigs and Littles",
+        "region": "Ab",
+        "category": "Adventure",
+        "Address": "36165 North Parallel Rd",
+        "Phone": "604-850-0411",
+        "marker-color": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2240161895752,
+          49.038578313316016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Great West Fitness",
+        "deal": "Littles do not pay drop in fee when Big is a member (LB/LS must be at least 14 years old. Must workout together.",
+        "region": "Ab",
+        "category": "Fitness",
+        "Address": "2550 Yale Ct, Abbotsford, BC V2S 8G9",
+        "Phone": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26958155632018,
+          49.04713358226541
+        ]
+      }
+    }
+  ]
+}
