@@ -284,13 +284,49 @@
         "Name": "Tap-ins putting course",
         "Category": "Recreation",
         "Deal": "Big pays. little gets in free",
-        "City": ""
+        "City": "Ch"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -121.96407794952393,
           49.072319650112306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "53790 Popkum Rd. South Rosedale",
+        "City": "Ch",
+        "Deal": "Buy one get one free admission",
+        "Category": "Recreation",
+        "Name": "Bridal Falls Water Park",
+        "Phone": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74014568328856,
+          49.18736959615986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "46191 Chilliwack Lake Road",
+        "City": "Ch",
+        "Deal": "Half price on rentals ($10) & $5  for 100 paintballs",
+        "Category": "Recreation",
+        "Name": "Snipers Paintball",
+        "Phone": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93968057632445,
+          49.08699304025951
         ]
       }
     }
