@@ -225,6 +225,74 @@
           49.142069136107295
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "45929B Wellington Ave. ",
+        "Category": "Entertainment",
+        "Name": "Darkside Games",
+        "City": "Ch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.95362336933613,
+          49.171492231061464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "215 Kilby Rd. ",
+        "City": "Ha",
+        "Deal": "Little pays ($7) big gets in free",
+        "Category": "Education",
+        "Name": "Kilby Historic Site",
+        "Phone": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.95914268493651,
+          49.23587045399044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "41905 Yale Road West",
+        "City": "Ch",
+        "Name": "Chilliwack Corn Maze",
+        "Category": "Recreation",
+        "Deal": "Big pays, little gets in free"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.06379175186157,
+          49.131001243025175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "4000 Columbia Valley",
+        "Name": "Tap-ins putting course",
+        "Category": "Recreation",
+        "Deal": "Big pays. little gets in free",
+        "City": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.96407794952393,
+          49.072319650112306
+        ]
+      }
     }
   ]
 }
