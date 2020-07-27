@@ -62,7 +62,7 @@
         "Address": "36036 South Parallel Rd",
         "City": "Ab",
         "Deal": "Big and Little each pay Junior rate to pay 9 or 18 holes of golf. Free club rentals for Big and Little at driving range. Little receives 1 free drop of balls (approx. 18 balls) at the range when Big purchases.",
-        "Category": "Fitness",
+        "Category": "Recreation",
         "Name": "Fraserglen Golf Course"
       },
       "geometry": {
@@ -116,7 +116,7 @@
         "Phone": "",
         "City": "Ab",
         "Deal": "Littles do not pay drop in fee when Big is a member (LB/LS must be at least 14 years old. Must workout together.",
-        "Category": "Fitness",
+        "Category": "Recreation ",
         "Name": "Great West Fitness"
       },
       "geometry": {
@@ -131,13 +131,62 @@
       "type": "Feature",
       "properties": {
         "Name": "Big Brothers Big Sisters of the Fraser Valley Head Office",
-        "Category": "Head Office"
+        "Category": "Head Office",
+        "Address": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -122.28693779557942,
           49.04626247493557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "45939 Wellington Ave",
+        "Name": "The Book Man",
+        "City": "Ch",
+        "Category": "Education"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.95343226194382,
+          49.17141419488054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "9145 Corbould St",
+        "Name": "Chilliwack Landing Leisure Center",
+        "City": "Ch",
+        "Category": "Recreation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.96579456329347,
+          49.16882577904028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "#101 - 5885 Vedder Rd.",
+        "City": "Ch",
+        "Name": "Bubba's Big Bites",
+        "Category": "Food"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.95906758308412,
+          49.1091986739026
         ]
       }
     }
