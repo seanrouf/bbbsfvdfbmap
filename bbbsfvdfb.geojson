@@ -8,7 +8,7 @@
         "Phone": "604-850-0426",
         "City": "Ab",
         "Deal": "Little gets in free when big pays $5 cover. Tuesdays half off",
-        "Category": "Adventure",
+        "Category": "Entertainment",
         "Name": "Boardwalk Cafe and Games"
       },
       "geometry": {
@@ -26,7 +26,7 @@
         "Phone": "604-514- 2282",
         "City": "La",
         "Deal": "2 games per player for only $9.25 + GST, Available in 3 locations",
-        "Category": "Adventure",
+        "Category": "Entertainment",
         "Name": "Planet Lazer"
       },
       "geometry": {
@@ -44,7 +44,7 @@
         "Phone": "778-654-3388",
         "City": "Ab",
         "Deal": "Use the coupon code YOUTHOFABBY when reserving online and receive a 25% discount off any day. ",
-        "Category": "Adventure",
+        "Category": "Entertainment",
         "Name": "VRCADE"
       },
       "geometry": {
@@ -148,7 +148,8 @@
         "Address": "45939 Wellington Ave",
         "Name": "The Book Man",
         "City": "Ch",
-        "Category": "Education"
+        "Category": "Education",
+        "Phone": ""
       },
       "geometry": {
         "type": "Point",
@@ -187,6 +188,41 @@
         "coordinates": [
           -121.95906758308412,
           49.1091986739026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "44335 Yale Rd",
+        "Deal": "",
+        "City": "Ch",
+        "Category": "Food",
+        "Name": "Cookies Grill",
+        "Phone": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.99744462966918,
+          49.14537656485306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "45380 Luckakuck Way",
+        "City": "Ch",
+        "Category": "Entertainment",
+        "Name": "Cottonwood4U Cinemas",
+        "Deal": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.96921974420549,
+          49.142069136107295
         ]
       }
     }
