@@ -446,6 +446,55 @@
           49.22994882146309
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "5-2043 Abbotsford Way",
+        "City": "Ab",
+        "Deal": "",
+        "Category": "Recreation",
+        "Name": "Play Abbotsford"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27760940790175,
+          49.040099240366466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "#5-2630 Bourquin Crescent West",
+        "City": "Ab",
+        "Category": "Education",
+        "Name": "The Book Man"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.30914145708084,
+          49.049598267452325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "4211 Gladwin Rd",
+        "City": "Ab",
+        "Category": "Fitness",
+        "Name": "Valley Golf Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.31765747070314,
+          49.07867302932616
+        ]
+      }
     }
   ]
 }
