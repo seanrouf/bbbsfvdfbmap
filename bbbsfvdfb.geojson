@@ -116,7 +116,7 @@
         "Phone": "",
         "City": "Ab",
         "Deal": "Littles do not pay drop in fee when Big is a member (LB/LS must be at least 14 years old. Must workout together.",
-        "Category": "Recreation ",
+        "Category": "Fitness",
         "Name": "Great West Fitness"
       },
       "geometry": {
@@ -327,6 +327,123 @@
         "coordinates": [
           -121.93968057632445,
           49.08699304025951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": " 7650 Grand Street",
+        "City": "Mi",
+        "Deal": "",
+        "Category": "Fitness",
+        "Name": "Mission Leisure Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.30662822723389,
+          49.14063204655012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "33038 2nd Ave",
+        "City": "Mi",
+        "Deal": "",
+        "Category": "Crafts",
+        "Name": "Mission Clay Works"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.30856478214264,
+          49.13513773391755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "32670 Lougheed Hwy",
+        "Phone": "",
+        "City": "Mi",
+        "Deal": "",
+        "Category": "Self-Care ",
+        "Name": "Beautiful U Boutique"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.31992393732071,
+          49.13261060188528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "190 22255 Dewdney Trunk Road",
+        "City": "MR",
+        "Category": "Crafts",
+        "Name": "The Create Shop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.60404229164122,
+          49.221083436250225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "20475 Lougheed Hwy Unit No 7",
+        "City": "MR",
+        "Category": "Fitness",
+        "Name": "Sun Hang Do Martial Arts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6539421081543,
+          49.21960834527737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "12027 Harris Rd",
+        "City": "MR",
+        "Deal": "",
+        "Category": "Fitness",
+        "Name": "Ridge Meadows Parks & Leisure Services"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.69153594970703,
+          49.22087671594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "19190 Lougheed Hwy",
+        "City": "MR",
+        "Category": "Recreation",
+        "Name": "Hollywood 3 Cinema"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6900714635849,
+          49.22994882146309
         ]
       }
     }
