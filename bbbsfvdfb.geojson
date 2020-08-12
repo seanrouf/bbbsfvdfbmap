@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "Address": " 2546 Montrose Ave.",
-        "Phone": "604-850-0426",
+        "Phone": "tel:6048500426",
         "City": "Ab",
         "Deal": "Little gets in free when big pays $5 cover. Tuesdays half off",
         "Category": "Entertainment",
