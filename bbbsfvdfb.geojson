@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "Address": " 2546 Montrose Ave.",
-        "Phone": "tel:6048500426",
+        "Phone": 6048500426,
         "City": "Ab",
         "Deal": "Little gets in free when big pays $5 cover. Tuesdays half off",
         "Category": "Entertainment",
@@ -23,7 +23,7 @@
       "type": "Feature",
       "properties": {
         "Address": " 20104 Logan Ave",
-        "Phone": "604-514- 2282",
+        "Phone": 6045142282,
         "City": "La",
         "Deal": "2 games per player for only $9.25 + GST, Available in 3 locations",
         "Category": "Entertainment",
@@ -41,7 +41,7 @@
       "type": "Feature",
       "properties": {
         "Address": " 2-2712 Clearbrook Rd",
-        "Phone": "778-654-3388",
+        "Phone": 7786543388,
         "City": "Ab",
         "Deal": "Use the coupon code YOUTHOFABBY when reserving online and receive a 25% discount off any day. ",
         "Category": "Entertainment",
@@ -58,7 +58,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Phone": "604-853-3477",
+        "Phone": 6048533477,
         "Address": "36036 South Parallel Rd",
         "City": "Ab",
         "Deal": "Big and Little each pay Junior rate to pay 9 or 18 holes of golf. Free club rentals for Big and Little at driving range. Little receives 1 free drop of balls (approx. 18 balls) at the range when Big purchases.",
@@ -77,7 +77,7 @@
       "type": "Feature",
       "properties": {
         "Address": "2536 Montrose Ave",
-        "Phone": "604-855-1138",
+        "Phone": 6048551138,
         "City": "Ab",
         "Deal": "Buy one piece and get the 2nd one for equal or lesser value at 1/2 price.",
         "Category": "Crafts",
@@ -95,7 +95,7 @@
       "type": "Feature",
       "properties": {
         "Address": "36165 North Parallel Rd",
-        "Phone": "604-850-0411",
+        "Phone": 6048500411,
         "City": "Ab",
         "Deal": "Buy one mini-golf, get one golf free for Bigs and Littles",
         "Category": "Adventure",
@@ -133,7 +133,8 @@
         "Name": "Big Brothers Big Sisters of the Fraser Valley Head Office",
         "Category": "Head Office",
         "Address": "",
-        "Deal": "No deal here, you can always visit us if we are open though :)"
+        "Deal": "No deal here, you can always visit us if we are open though :)",
+        "Phone": 6048523331
       },
       "geometry": {
         "type": "Point",
@@ -258,7 +259,7 @@
         "Deal": "Little pays ($7) big gets in free",
         "Category": "Education",
         "Name": "Kilby Historic Site",
-        "Phone": "604-796-9576"
+        "Phone": 6047969576
       },
       "geometry": {
         "type": "Point",
