@@ -132,7 +132,8 @@
       "properties": {
         "Name": "Big Brothers Big Sisters of the Fraser Valley Head Office",
         "Category": "Head Office",
-        "Address": ""
+        "Address": "",
+        "Deal": "No deal here, you can always visit us if we are open though :)"
       },
       "geometry": {
         "type": "Point",
@@ -149,7 +150,8 @@
         "Name": "The Book Man",
         "City": "Ch",
         "Category": "Education",
-        "Phone": ""
+        "Phone": "",
+        "Deal": "50% off a used kid’s book from the kid’s section only. "
       },
       "geometry": {
         "type": "Point",
@@ -165,7 +167,8 @@
         "Address": "9145 Corbould St",
         "Name": "Chilliwack Landing Leisure Center",
         "City": "Ch",
-        "Category": "Recreation"
+        "Category": "Recreation",
+        "Deal": " 2$ drop in fee for both the Big and the Little. "
       },
       "geometry": {
         "type": "Point",
@@ -181,7 +184,8 @@
         "Address": "#101 - 5885 Vedder Rd.",
         "City": "Ch",
         "Name": "Bubba's Big Bites",
-        "Category": "Food"
+        "Category": "Food",
+        "Deal": " 10% off entire meal. "
       },
       "geometry": {
         "type": "Point",
@@ -195,7 +199,7 @@
       "type": "Feature",
       "properties": {
         "Address": "44335 Yale Rd",
-        "Deal": "",
+        "Deal": "The \"big\" pays for their meal, the \"little\" eats for free.",
         "City": "Ch",
         "Category": "Food",
         "Name": "Cookies Grill",
@@ -216,7 +220,7 @@
         "City": "Ch",
         "Category": "Entertainment",
         "Name": "Cottonwood4U Cinemas",
-        "Deal": ""
+        "Deal": "Little pays, Big gets in free. "
       },
       "geometry": {
         "type": "Point",
@@ -232,7 +236,8 @@
         "Address": "45929B Wellington Ave. ",
         "Category": "Entertainment",
         "Name": "Darkside Games",
-        "City": "Ch"
+        "City": "Ch",
+        "Deal": "The Big Brother/Sister plays for free with child."
       },
       "geometry": {
         "type": "Point",
@@ -245,12 +250,15 @@
     {
       "type": "Feature",
       "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
         "Address": "215 Kilby Rd. ",
         "City": "Ha",
         "Deal": "Little pays ($7) big gets in free",
         "Category": "Education",
         "Name": "Kilby Historic Site",
-        "Phone": ""
+        "Phone": "604-796-9576"
       },
       "geometry": {
         "type": "Point",
@@ -335,7 +343,7 @@
       "properties": {
         "Address": " 7650 Grand Street",
         "City": "Mi",
-        "Deal": "",
+        "Deal": "Big pays, Little gets in free.",
         "Category": "Fitness",
         "Name": "Mission Leisure Center"
       },
@@ -352,7 +360,7 @@
       "properties": {
         "Address": "33038 2nd Ave",
         "City": "Mi",
-        "Deal": "",
+        "Deal": " A discount for each Big and Little will be Youth $15 and Adult $15 for 1.5 hours of instruction, and including glazing and firing fee as well. There would be a one time charge of $10 for materials, such as clay and glazes.",
         "Category": "Crafts",
         "Name": "Mission Clay Works"
       },
@@ -370,7 +378,7 @@
         "Address": "32670 Lougheed Hwy",
         "Phone": "",
         "City": "Mi",
-        "Deal": "",
+        "Deal": " Little gets a free pedicure when Big pays for their own pedicure. Mention discount when you book appt.",
         "Category": "Self-Care ",
         "Name": "Beautiful U Boutique"
       },
@@ -388,7 +396,8 @@
         "Address": "190 22255 Dewdney Trunk Road",
         "City": "MR",
         "Category": "Crafts",
-        "Name": "The Create Shop"
+        "Name": "The Create Shop",
+        "Deal": " 30% off any item in store. "
       },
       "geometry": {
         "type": "Point",
@@ -404,7 +413,8 @@
         "Address": "20475 Lougheed Hwy Unit No 7",
         "City": "MR",
         "Category": "Fitness",
-        "Name": "Sun Hang Do Martial Arts"
+        "Name": "Sun Hang Do Martial Arts",
+        "Deal": "Free Drop In Classes "
       },
       "geometry": {
         "type": "Point",
@@ -419,7 +429,7 @@
       "properties": {
         "Address": "12027 Harris Rd",
         "City": "MR",
-        "Deal": "",
+        "Deal": "11925 Haney Place Maple Ridge",
         "Category": "Fitness",
         "Name": "Ridge Meadows Parks & Leisure Services"
       },
@@ -437,7 +447,8 @@
         "Address": "19190 Lougheed Hwy",
         "City": "MR",
         "Category": "Recreation",
-        "Name": "Hollywood 3 Cinema"
+        "Name": "Hollywood 3 Cinema",
+        "Deal": " Big gets in free with purchase of Little’s ticket."
       },
       "geometry": {
         "type": "Point",
@@ -452,7 +463,7 @@
       "properties": {
         "Address": "5-2043 Abbotsford Way",
         "City": "Ab",
-        "Deal": "",
+        "Deal": "35% off regular admission rates, not including weekends and holidays.",
         "Category": "Recreation",
         "Name": "Play Abbotsford"
       },
@@ -470,7 +481,8 @@
         "Address": "#5-2630 Bourquin Crescent West",
         "City": "Ab",
         "Category": "Education",
-        "Name": "The Book Man"
+        "Name": "The Book Man",
+        "Deal": "50% off a used kid’s book from the kid’s section only. "
       },
       "geometry": {
         "type": "Point",
@@ -486,7 +498,8 @@
         "Address": "4211 Gladwin Rd",
         "City": "Ab",
         "Category": "Fitness",
-        "Name": "Valley Golf Center"
+        "Name": "Valley Golf Center",
+        "Deal": "Medium Bucket of balls for $6.00 with free club rentals and/or golf the 9 hole course for $10 plus $5.00 club rental. "
       },
       "geometry": {
         "type": "Point",
