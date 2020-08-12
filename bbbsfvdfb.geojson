@@ -151,7 +151,7 @@
         "Name": "The Book Man",
         "City": "Ch",
         "Category": "Education",
-        "Phone": "",
+        "Phone": "604-853-7323",
         "Deal": "50% off a used kid’s book from the kid’s section only. "
       },
       "geometry": {
@@ -169,7 +169,8 @@
         "Name": "Chilliwack Landing Leisure Center",
         "City": "Ch",
         "Category": "Recreation",
-        "Deal": " 2$ drop in fee for both the Big and the Little. "
+        "Deal": " 2$ drop in fee for both the Big and the Little. ",
+        "Phone": "604-793-7946"
       },
       "geometry": {
         "type": "Point",
@@ -186,7 +187,8 @@
         "City": "Ch",
         "Name": "Bubba's Big Bites",
         "Category": "Food",
-        "Deal": " 10% off entire meal. "
+        "Deal": " 10% off entire meal. ",
+        "Phone": "604-858-0020"
       },
       "geometry": {
         "type": "Point",
@@ -204,7 +206,7 @@
         "City": "Ch",
         "Category": "Food",
         "Name": "Cookies Grill",
-        "Phone": ""
+        "Phone": "604-792-0444"
       },
       "geometry": {
         "type": "Point",
@@ -220,8 +222,9 @@
         "Address": "45380 Luckakuck Way",
         "City": "Ch",
         "Category": "Entertainment",
-        "Name": "Cottonwood4U Cinemas",
-        "Deal": "Little pays, Big gets in free. "
+        "Name": "Cottonwood4 Cinemas",
+        "Deal": "Little pays, Big gets in free. ",
+        "Phone": "604-858-6028"
       },
       "geometry": {
         "type": "Point",
@@ -238,7 +241,8 @@
         "Category": "Entertainment",
         "Name": "Darkside Games",
         "City": "Ch",
-        "Deal": "The Big Brother/Sister plays for free with child."
+        "Deal": "The Big Brother/Sister plays for free with child.",
+        "Phone": "604-392-2015"
       },
       "geometry": {
         "type": "Point",
@@ -276,7 +280,8 @@
         "City": "Ch",
         "Name": "Chilliwack Corn Maze",
         "Category": "Recreation",
-        "Deal": "Big pays, little gets in free"
+        "Deal": "Big pays, little gets in free",
+        "Phone": 6048457771
       },
       "geometry": {
         "type": "Point",
@@ -293,7 +298,8 @@
         "Name": "Tap-ins putting course",
         "Category": "Recreation",
         "Deal": "Big pays. little gets in free",
-        "City": "Ch"
+        "City": "Ch",
+        "Phone": "604-858-7888"
       },
       "geometry": {
         "type": "Point",
@@ -311,7 +317,7 @@
         "Deal": "Buy one get one free admission",
         "Category": "Recreation",
         "Name": "Bridal Falls Water Park",
-        "Phone": ""
+        "Phone": "888-883-8852"
       },
       "geometry": {
         "type": "Point",
@@ -328,8 +334,8 @@
         "City": "Ch",
         "Deal": "Half price on rentals ($10) & $5  for 100 paintballs",
         "Category": "Recreation",
-        "Name": "Snipers Paintball",
-        "Phone": ""
+        "Name": "Sniper'z Paintball",
+        "Phone": "604-792-8799"
       },
       "geometry": {
         "type": "Point",
@@ -346,7 +352,8 @@
         "City": "Mi",
         "Deal": "Big pays, Little gets in free.",
         "Category": "Fitness",
-        "Name": "Mission Leisure Center"
+        "Name": "Mission Leisure Center",
+        "Phone": "604-820-5350"
       },
       "geometry": {
         "type": "Point",
@@ -363,7 +370,8 @@
         "City": "Mi",
         "Deal": " A discount for each Big and Little will be Youth $15 and Adult $15 for 1.5 hours of instruction, and including glazing and firing fee as well. There would be a one time charge of $10 for materials, such as clay and glazes.",
         "Category": "Crafts",
-        "Name": "Mission Clay Works"
+        "Name": "Mission Clay Works",
+        "Phone": "604-556-1501"
       },
       "geometry": {
         "type": "Point",
@@ -377,7 +385,7 @@
       "type": "Feature",
       "properties": {
         "Address": "32670 Lougheed Hwy",
-        "Phone": "",
+        "Phone": "604-287-2020",
         "City": "Mi",
         "Deal": " Little gets a free pedicure when Big pays for their own pedicure. Mention discount when you book appt.",
         "Category": "Self-Care ",
@@ -398,7 +406,8 @@
         "City": "MR",
         "Category": "Crafts",
         "Name": "The Create Shop",
-        "Deal": " 30% off any item in store. "
+        "Deal": " 30% off any item in store. ",
+        "Phone": "604-380-3801"
       },
       "geometry": {
         "type": "Point",
@@ -415,7 +424,8 @@
         "City": "MR",
         "Category": "Fitness",
         "Name": "Sun Hang Do Martial Arts",
-        "Deal": "Free Drop In Classes "
+        "Deal": "Free Drop In Classes ",
+        "Phone": "604-465-1065"
       },
       "geometry": {
         "type": "Point",
@@ -449,7 +459,8 @@
         "City": "MR",
         "Category": "Recreation",
         "Name": "Hollywood 3 Cinema",
-        "Deal": " Big gets in free with purchase of Little’s ticket."
+        "Deal": " Big gets in free with purchase of Little’s ticket.",
+        "Phone": "604-459-6004"
       },
       "geometry": {
         "type": "Point",
@@ -466,7 +477,8 @@
         "City": "Ab",
         "Deal": "35% off regular admission rates, not including weekends and holidays.",
         "Category": "Recreation",
-        "Name": "Play Abbotsford"
+        "Name": "Play Abbotsford",
+        "Phone": "604-853-7529"
       },
       "geometry": {
         "type": "Point",
@@ -483,7 +495,8 @@
         "City": "Ab",
         "Category": "Education",
         "Name": "The Book Man",
-        "Deal": "50% off a used kid’s book from the kid’s section only. "
+        "Deal": "50% off a used kid’s book from the kid’s section only. ",
+        "Phone": "604-853-7323"
       },
       "geometry": {
         "type": "Point",
@@ -500,7 +513,8 @@
         "City": "Ab",
         "Category": "Fitness",
         "Name": "Valley Golf Center",
-        "Deal": "Medium Bucket of balls for $6.00 with free club rentals and/or golf the 9 hole course for $10 plus $5.00 club rental. "
+        "Deal": "Medium Bucket of balls for $6.00 with free club rentals and/or golf the 9 hole course for $10 plus $5.00 club rental. ",
+        "Phone": "604-853-4653"
       },
       "geometry": {
         "type": "Point",
