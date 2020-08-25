@@ -6,6 +6,7 @@
 <meta name="viewport" content="initial-scale=1,width=device-width" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <style>
     a {
   text-decoration: none;
@@ -227,6 +228,56 @@ a:hover {
 }
 </style>
 
+<style>
+  .filter-group {
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  border-radius: 3px;
+  width: 120px;
+  color: #fff;
+  }
+   
+  .filter-group input[type='checkbox']:first-child + label {
+  border-radius: 3px 3px 0 0;
+  }
+   
+  .filter-group label:last-child {
+  border-radius: 0 0 3px 3px;
+  border: none;
+  }
+   
+  .filter-group input[type='checkbox'] {
+  display: none;
+  }
+   
+  .filter-group input[type='checkbox'] + label {
+  background-color: #3386c0;
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  }
+   
+  .filter-group input[type='checkbox'] + label {
+  background-color: #3386c0;
+  text-transform: capitalize;
+  }
+   
+  .filter-group input[type='checkbox'] + label:hover,
+  .filter-group input[type='checkbox']:checked + label {
+  background-color: #4ea0da;
+  }
+   
+  .filter-group input[type='checkbox']:checked + label:before {
+  content: '✔';
+  margin-right: 5px;
+  }
+  </style>
+
 <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 
@@ -257,6 +308,7 @@ type="text/css"
       <div id="main">
         
         <div id="map"></div>
+        <nav id="filter-group" class="filter-group"></nav>
         <div id='console'>
             <button class="openbtn" onclick="openNav()"><h1>&#9776;  More Info</h1></button>
             <h2>Deals for Bigs Fraser Valley</h2>
@@ -293,6 +345,7 @@ type="text/css"
 [-121, 49], // Southwest coordinates
 [-123, 49.5] // Northeast coordinates
 ];
+
 var map = new mapboxgl.Map({
 container: 'map', // container id
 style: 'mapbox://styles/jeanlouiss/ckcux6wja042n1ipkene8a1xp', //hosted style id
@@ -310,26 +363,567 @@ enableHighAccuracy: true
 trackUserLocation: true
 })
 );
+//checkbox
+data = 'https://raw.githubusercontent.com/seanrouf/bbbsfvdfbmap/master/bbbsfvdfb.geojson'
 
-  map.on('load', function()  {
+var filterGroup = document.getElementById('filter-group');
+
+/*
+var data = 
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": " 2546 Montrose Ave.",
+        "Phone": 6048500426,
+        "City": "Ab",
+        "Deal": "Little gets in free when big pays $5 cover. Tuesdays half off",
+        "Category": "Entertainment",
+        "Name": "Boardwalk Cafe and Games"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.29015812277792,
+          49.04813388649018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": " 20104 Logan Ave",
+        "Phone": 6045142282,
+        "City": "La",
+        "Deal": "2 games per player for only $9.25 + GST, Available in 3 locations",
+        "Category": "Entertainment",
+        "Name": "Planet Lazer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.66726966947317,
+          49.11121958870399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": " 2-2712 Clearbrook Rd",
+        "Phone": 7786543388,
+        "City": "Ab",
+        "Deal": "Use the coupon code YOUTHOFABBY when reserving online and receive a 25% discount off any day. ",
+        "Category": "Entertainment",
+        "Name": "VRCADE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.33735561370848,
+          49.05139660187196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Phone": 6048533477,
+        "Address": "36036 South Parallel Rd",
+        "City": "Ab",
+        "Deal": "Big and Little each pay Junior rate to pay 9 or 18 holes of golf. Free club rentals for Big and Little at driving range. Little receives 1 free drop of balls (approx. 18 balls) at the range when Big purchases.",
+        "Category": "Recreation",
+        "Name": "Fraserglen Golf Course"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.22955226898195,
+          49.03305686936007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "2536 Montrose Ave",
+        "Phone": 6048551138,
+        "City": "Ab",
+        "Deal": "Buy one piece and get the 2nd one for equal or lesser value at 1/2 price.",
+        "Category": "Crafts",
+        "Name": "The Clay Cottage"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.29017153382301,
+          49.04797654647394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "36165 North Parallel Rd",
+        "Phone": 6048500411,
+        "City": "Ab",
+        "Deal": "Buy one mini-golf, get one golf free for Bigs and Littles",
+        "Category": "Adventure",
+        "Name": "Castle Fun Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2240161895752,
+          49.038578313316016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "2550 Yale Ct, Abbotsford, BC V2S 8G9",
+        "Phone": "",
+        "City": "Ab",
+        "Deal": "Littles do not pay drop in fee when Big is a member (LB/LS must be at least 14 years old. Must workout together.",
+        "Category": "Fitness",
+        "Name": "Great West Fitness"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26958155632018,
+          49.04713358226541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Big Brothers Big Sisters of the Fraser Valley Head Office",
+        "Category": "Head Office",
+        "Address": "",
+        "Deal": "No deal here, you can always visit us if we are open though :)",
+        "Phone": 6048523331
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.28693779557942,
+          49.04626247493557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "45939 Wellington Ave",
+        "Name": "The Book Man",
+        "City": "Ch",
+        "Category": "Education",
+        "Phone": "604-853-7323",
+        "Deal": "50% off a used kid’s book from the kid’s section only. "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.95343226194382,
+          49.17141419488054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "9145 Corbould St",
+        "Name": "Chilliwack Landing Leisure Center",
+        "City": "Ch",
+        "Category": "Recreation",
+        "Deal": " 2$ drop in fee for both the Big and the Little. ",
+        "Phone": "604-793-7946"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.96579456329347,
+          49.16882577904028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "#101 - 5885 Vedder Rd.",
+        "City": "Ch",
+        "Name": "Bubba's Big Bites",
+        "Category": "Food",
+        "Deal": " 10% off entire meal. ",
+        "Phone": "604-858-0020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.95906758308412,
+          49.1091986739026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "44335 Yale Rd",
+        "Deal": "The \"big\" pays for their meal, the \"little\" eats for free.",
+        "City": "Ch",
+        "Category": "Food",
+        "Name": "Cookies Grill",
+        "Phone": "604-792-0444"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.99744462966918,
+          49.14537656485306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "45380 Luckakuck Way",
+        "City": "Ch",
+        "Category": "Entertainment",
+        "Name": "Cottonwood4 Cinemas",
+        "Deal": "Little pays, Big gets in free. ",
+        "Phone": "604-858-6028"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.96921974420549,
+          49.142069136107295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "45929B Wellington Ave. ",
+        "Category": "Entertainment",
+        "Name": "Darkside Games",
+        "City": "Ch",
+        "Deal": "The Big Brother/Sister plays for free with child.",
+        "Phone": "604-392-2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.95362336933613,
+          49.171492231061464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Address": "215 Kilby Rd. ",
+        "City": "Ha",
+        "Deal": "Little pays ($7) big gets in free",
+        "Category": "Education",
+        "Name": "Kilby Historic Site",
+        "Phone": 6047969576
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.95914268493651,
+          49.23587045399044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "41905 Yale Road West",
+        "City": "Ch",
+        "Name": "Chilliwack Corn Maze",
+        "Category": "Recreation",
+        "Deal": "Big pays, little gets in free",
+        "Phone": 6048457771
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.06379175186157,
+          49.131001243025175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "4000 Columbia Valley",
+        "Name": "Tap-ins putting course",
+        "Category": "Recreation",
+        "Deal": "Big pays. little gets in free",
+        "City": "Ch",
+        "Phone": "604-858-7888"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.96407794952393,
+          49.072319650112306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "53790 Popkum Rd. South Rosedale",
+        "City": "Ch",
+        "Deal": "Buy one get one free admission",
+        "Category": "Recreation",
+        "Name": "Bridal Falls Water Park",
+        "Phone": "888-883-8852"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74014568328856,
+          49.18736959615986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "46191 Chilliwack Lake Road",
+        "City": "Ch",
+        "Deal": "Half price on rentals ($10) & $5  for 100 paintballs",
+        "Category": "Recreation",
+        "Name": "Sniper'z Paintball",
+        "Phone": "604-792-8799"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93968057632445,
+          49.08699304025951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": " 7650 Grand Street",
+        "City": "Mi",
+        "Deal": "Big pays, Little gets in free.",
+        "Category": "Fitness",
+        "Name": "Mission Leisure Center",
+        "Phone": "604-820-5350"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.30662822723389,
+          49.14063204655012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "33038 2nd Ave",
+        "City": "Mi",
+        "Deal": " A discount for each Big and Little will be Youth $15 and Adult $15 for 1.5 hours of instruction, and including glazing and firing fee as well. There would be a one time charge of $10 for materials, such as clay and glazes.",
+        "Category": "Crafts",
+        "Name": "Mission Clay Works",
+        "Phone": "604-556-1501"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.30856478214264,
+          49.13513773391755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "32670 Lougheed Hwy",
+        "Phone": "604-287-2020",
+        "City": "Mi",
+        "Deal": " Little gets a free pedicure when Big pays for their own pedicure. Mention discount when you book appt.",
+        "Category": "Self-Care ",
+        "Name": "Beautiful U Boutique"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.31992393732071,
+          49.13261060188528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "190 22255 Dewdney Trunk Road",
+        "City": "MR",
+        "Category": "Crafts",
+        "Name": "The Create Shop",
+        "Deal": " 30% off any item in store. ",
+        "Phone": "604-380-3801"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.60404229164122,
+          49.221083436250225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "20475 Lougheed Hwy Unit No 7",
+        "City": "MR",
+        "Category": "Fitness",
+        "Name": "Sun Hang Do Martial Arts",
+        "Deal": "Free Drop In Classes ",
+        "Phone": "604-465-1065"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6539421081543,
+          49.21960834527737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "12027 Harris Rd",
+        "City": "MR",
+        "Deal": "11925 Haney Place Maple Ridge",
+        "Category": "Fitness",
+        "Name": "Ridge Meadows Parks & Leisure Services"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.69153594970703,
+          49.22087671594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "19190 Lougheed Hwy",
+        "City": "MR",
+        "Category": "Recreation",
+        "Name": "Hollywood 3 Cinema",
+        "Deal": " Big gets in free with purchase of Little’s ticket.",
+        "Phone": "604-459-6004"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6900714635849,
+          49.22994882146309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "5-2043 Abbotsford Way",
+        "City": "Ab",
+        "Deal": "35% off regular admission rates, not including weekends and holidays.",
+        "Category": "Recreation",
+        "Name": "Play Abbotsford",
+        "Phone": "604-853-7529"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27760940790175,
+          49.040099240366466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "#5-2630 Bourquin Crescent West",
+        "City": "Ab",
+        "Category": "Education",
+        "Name": "The Book Man",
+        "Deal": "50% off a used kid’s book from the kid’s section only. ",
+        "Phone": "604-853-7323"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.30914145708084,
+          49.049598267452325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Address": "4211 Gladwin Rd",
+        "City": "Ab",
+        "Category": "Fitness",
+        "Name": "Valley Golf Center",
+        "Deal": "Medium Bucket of balls for $6.00 with free club rentals and/or golf the 9 hole course for $10 plus $5.00 club rental. ",
+        "Phone": "604-853-4653"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.31765747070314,
+          49.07867302932616
+        ]
+      }
+    }
+  ]
+}
+
+*/
+
+map.on('load', function()  {
 
 map.addSource('dealLocations',{
   'type':'geojson',
-  'data': 'https://raw.githubusercontent.com/seanrouf/bbbsfvdfbmap/master/bbbsfvdfb.geojson',
-
+  'data': data ,
 });
 
-map.addSource('dealLocationsClust',{
-  'type':'geojson',
-  'data': 'https://raw.githubusercontent.com/seanrouf/bbbsfvdfbmap/master/bbbsfvdfb.geojson',
-  'cluster':true,
-  'clusterRadius': 40,
-
+/*$.ajax({
+    type: "GET",
+    url: data,
+    dataType: 'json',
+    async: false,
 });
-/*
-let iconType = (str) => {
 
-if (cat==='Entertianment') {
+
+console.log(data);
+
+data.features.forEach(function(feature){
+  var cat   = feature.properties['Category'];
+  var symbol = (function(cat){
+
+if (str==='Entertianment') {
     return 'amusement-park'
 };
 
@@ -352,41 +946,36 @@ if (str==='Education') {
 if (str==='Self-Care') {
     return 'convenience'
 };
-return 'Yikes City Not Found'
+return 'null'
+})
 
 
-}
+    var layerID = 'poi-' + cat
+
+
+    if (!map.getLayer(layerID)){
+      map.addLayer({
+        'id':layerID,
+        'type':'symbol',
+        'source':'data',
+        'layout':{
+          'icon-image': symbol + '-15',
+          'icon-allow-overlap': true
+        },
+        'filter':['==', 'icon', symbol]
+      })
+    }
 */
-let iconNumber = (str) => {
 
-if (str==='Entertianment') {
-    return '-15'
-};
 
-if (str==='Recreation') {
-    return '-15'
-};
+map.addSource('dealLocationsClust',{
+  'type':'geojson',
+  'data': data,
+  'cluster':true,
+  'clusterRadius': 40,
 
-if (str==='Fitness') {
-    return '-15'
-};
-
-if (str==='Crafts') {
-    return '-15'
-};
-
-if (str==='Education') {
-    return '-15'
-};
-
-if (str==='Self-Care') {
-    return '-15'
-};
-return 'Yikes City Not Found'
-}
-map.on('load','dealLocations', function(e){
-    var catt = e.features[0].properties.Category;
 });
+
 
 map.addLayer({
   'id': 'dealLocations',
@@ -394,7 +983,7 @@ map.addLayer({
   'source':'dealLocations',
    'layout': {
       'icon-image':
-       ['concat','amusement-park','-15'],
+       ['concat', 'amusement-park','-15'],
     
   }
   
@@ -441,7 +1030,6 @@ var popup = new mapboxgl.Popup({
 closeButton: false,
 closeOnClick: false
 });
-
 
 map.on('mouseenter', 'clusters', function(e) {
 // Change the cursor style as a UI indicator.
