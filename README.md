@@ -6,9 +6,13 @@ This project is comprised of an interactive map which centers around the Fraser 
 
 ### Colour Iconography
 
-The map is designed within the Big Brothers Big Sisters national branding guidelines in mind. Since the main purpose of the map is to connect matches with activies to participate in, parks were one of the exclusive coloured polygons on the map. Parks also feature lables where possible, and their inlusion on the map promotes healthy lifestyles and backing. 
+The map is designed within the Big Brothers Big Sisters national branding guidelines in mind. Since the main purpose of the map is to connect matches with activies to participate in, parks were one of the exclusive coloured polygons on the map. Parks also feature lables where possible, and their inclusion on the map promotes healthy lifestyles and connecting with the outdoors. 
 
-The focus of the map is sponsored locations. This has two purposes. Initally they are easy to find for matches. The geolocation feature builds on this, providing locations that are nearby and easily accessable. Secondarily, they act as marketing for businesses. We appreciate the support we get from businesses and hope to promote them as much as possible. Future possibilities include differing icon sizes or 'prefered locations' which contribute more towards fundraising goals. Additionally, an alternative map could be included for major donors which could be included on our website.
+The focus of the map is the deals themselves. This has two purposes. 
+*Initally this styleization is easy to find for matches. The geolocation feature builds on this, providing locations that are nearby and easily accessable. 
+*Secondarily, they act as marketing for businesses. We appreciate the support we get from businesses and hope to promote them as much as possible. Future possibilities include differing icon sizes or 'prefered locations' which contribute more towards fundraising goals. 
+
+For the future an alternative map could be included for major donors. This could be included on the BBBS website and incentivize larger donations due to marketing value.
 
 ### Interactiviy
 
