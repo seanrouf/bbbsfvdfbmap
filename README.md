@@ -14,3 +14,7 @@ The focus of the map is sponsored locations. This has two purposes. Initally the
 ### Interactiviy
 
 As mentioned earlier, a geolocation feature is included to assist with relating the user to what is nearby. Additionally, a popup was created which gives the deal location's phone number and the deal description, and the cursor changes upon hovering cliclable opbjects to assit with usability. Zoom is also included. At this time mobile is not entirely supported but this could change in future iterations.
+
+## Files Included
+
+This repository contains the physical HTML file of the map, a geoJSON file which can be edited easily on the geoJSON.io website, as well as font files which assit with branding
