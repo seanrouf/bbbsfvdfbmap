@@ -18,6 +18,19 @@ For the future an alternative map could be included for major donors. This could
 
 As mentioned earlier, a geolocation feature is included to assist with relating the user to what is nearby. Additionally, a popup was created which gives the deal location's phone number and the deal description, and the cursor changes upon hovering cliclable opbjects to assit with usability. Zoom is also included. At this time mobile is not entirely supported but this could change in future iterations.
 
+### Web Considerations
+
+A notable addition is the side menu which allows for further interactivity with the organization. Most notably is the inclusion of a 'submit a deal' button which automatically composes an email to be sent to ED Corina Caroll with significant deal information. 
+
 ## Files Included
 
 This repository contains the physical HTML file of the map, a geoJSON file which can be edited easily on the geoJSON.io website, as well as font files which assit with branding
+
+
+## Limitations
+At this time some limitations exist and will be listed in point form, along with an difficulty of implementation
+* Different icons per category of deal - low to moderate (Planned for further update)
+* Filter of Categories of Deals - Low to moderate (Planned for futher update)
+* Turn by turn navigation to deals - Moderate
+* Special event locations and times - Moderate to implement, Difficult to maintain without training
+* Additional map layer which shows general sponsors at other capacities. Easy to moderate to implement, easy to maintain without training, time consuming
