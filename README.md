@@ -29,7 +29,7 @@ This repository contains the physical HTML file of the map, a geoJSON file which
 
 
 ## Limitations
-At this time some limitations exist and will be listed in point form, along with an difficulty of implementation
+At this time some limitations exist and will be listed in point form, along with a difficulty of implementation
 * Different icons per category of deal - low to moderate (Planned for further update)
 * Filter of Categories of Deals - Low to moderate (Planned for futher update)
 * Turn by turn navigation to deals - Moderate
