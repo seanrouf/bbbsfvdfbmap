@@ -1,7 +1,7 @@
 
 # BBBS FV Deals for Bigs Map
 
-This project is comprised of an interactive map which centers around the Fraser Valley and businesses which support Big Brothers Big Sisters of the Fraser Valley through our Deals for Bigs program and can be accessed here:[a relative link](/Work/bbbs.html)
+This project is comprised of an interactive map which centers around the Fraser Valley and businesses which support Big Brothers Big Sisters of the Fraser Valley through our Deals for Bigs program and can be accessed [here](/Work/bbbs.html)
 ## Cartographic Considerations
 
 ### Colour Iconography
